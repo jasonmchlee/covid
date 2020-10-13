@@ -1,4 +1,4 @@
-def covid_data():
+def usa_covid_data():
     """
 
     Overview:
