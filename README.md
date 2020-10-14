@@ -15,7 +15,7 @@ The function `usa_covid_data()` from the file [`usa_covid_cases.py`](https://git
 The function merges all the data into a single csv file, iterating over each available csv in the original repo. The final output csv is useful to conduct timeseries analysis and to understand how covid cases in the US have changed since April.
 
 ### DAG File
-The file `covid_DAG.py` is an DAG ([Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)), I use in [Apace Airflow](https://airflow.apache.org/). The DAG runs daily on my local machine to automatically generate the most up to date merged dat using both the functions discussed.
+The file [`covid_DAG.py`](https://github.com/jasonmchlee/covid/blob/covid_branch/covid_DAG.py) is an DAG ([Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)), I use in [Apace Airflow](https://airflow.apache.org/). The DAG runs daily on my local machine to automatically generate the most up to date merged dat using both the functions discussed.
 
 ### Dashboard
 After extracting the dataset, the results from the World Data function are piped into Tableau for visualization. You can view the [Tableau dashboard](https://public.tableau.com/profile/jasonmchlee#!/vizhome/COVID-19_15853665003940/CovidDashboard?publish=yes) here.
