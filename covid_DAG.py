@@ -28,5 +28,5 @@ t2 = PythonOperator(task_id = 'usa_covid_data',
                     python_callable = usa_covid_data,
                     dag = dag)
 
-# Dependecies
+# Dependencies
 [t1, t2]
