@@ -37,5 +37,10 @@ t4 = PythonOperator(task_id = 'usa_covid_data',
                     python_callable = usa_covid_data,
                     dag = dag)
 
+<<<<<<< HEAD
 # Dependecies
 t1 >> [t2,t3] >> t4
+=======
+# Dependencies
+[t1, t2]
+>>>>>>> 905ec5d4618f6f8ceee5947035910ed4cdccb5fe
